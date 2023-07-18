@@ -1,4 +1,4 @@
-import { Hi } from '../lib/components'
+import { Hi } from '@/lib/components'
 
 export default function Home() {
   return (
