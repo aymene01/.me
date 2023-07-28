@@ -1,9 +1,26 @@
 'use client'
 
 import React, { useState } from 'react'
-import { menuItems, socialIcons } from '@/lib/constant'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { Link } from 'react-scroll'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { Heading } from '@chakra-ui/react'
+
+const menuItems = [
+  { id: 1, label: 'Home', target: 'home' },
+  { id: 2, label: 'About', target: 'about' },
+  { id: 4, label: 'Work', target: 'work' },
+]
+
+const socialIcons = [
+  {
+    id: 1,
+    href: 'https://www.linkedin.com/in/aymene-bousbia-3147b21a1/',
+    label: 'Linkedin',
+    icon: <FaLinkedin size={30} />,
+  },
+  { id: 2, href: 'https://github.com/aymene01', label: 'Github', icon: <FaGithub size={30} /> },
+]
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
@@ -12,16 +29,17 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <div>
-        <h1>Aymene Bousbia</h1>
+        <Heading m={5}>.me</Heading>
       </div>
 
       {/* menu */}
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex space-x-5 mr-7">
         {menuItems.map(item => (
-          <li key={item.id}>
+          <li key={item.id} className="group relative px-4 py-2 transition-border">
             <Link to={item.target} smooth={true} duration={500}>
               {item.label}
             </Link>
+            <div className="absolute bottom-0 left-0 w-full h-0 border-b border-white group-hover:h-1 group-hover:opacity-100 opacity-0 transition-all duration-200"></div>
           </li>
         ))}
       </ul>
@@ -54,7 +72,7 @@ const Navbar = () => {
           {socialIcons.map(icon => (
             <li
               key={icon.id}
-              className={`w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-${icon.color}`}
+              className={`w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300`}
             >
               <a className="flex justify-between items-center w-full text-gray-300" href={icon.href}>
                 {icon.label} {icon.icon}
