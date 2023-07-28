@@ -2,7 +2,7 @@
 
 const ProjectCard = ({ title, body, repoUrl }: { title: string; body: string; repoUrl: string }) => {
   return (
-    <div className="space-y-5 w-1/5 flex flex-col justify-around">
+    <div className="space-y-5 w-1/5 flex flex-col justify-around maz">
       <h1 className="text-2xl font-extralight">{title}</h1>
       <p>{body}</p>
       <a href={repoUrl} className="block">
@@ -39,7 +39,7 @@ const Work = () => {
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">Current Projects</p>
         </div>
-        <div className="flex space-x-10 flex-wrap mt-4">
+        <div className="flex flex-wrap justify-between mt-4">
           {projects.map(project => (
             <ProjectCard body={project.description} repoUrl={project.repoUrl} title={project.title} />
           ))}
