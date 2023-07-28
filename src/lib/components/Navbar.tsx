@@ -29,18 +29,25 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <div>
-        <Heading m={5}>.me</Heading>
+        <Heading className="font-extralight" m={5}>
+          .me
+        </Heading>
       </div>
 
       {/* menu */}
       <ul className="hidden md:flex space-x-5 mr-7">
         {menuItems.map(item => (
-          <li key={item.id} className="group relative px-4 py-2 transition-border">
-            <Link to={item.target} smooth={true} duration={500}>
+          <Link
+            className="cursor-pointer hover:bg-pink-600 hover:text-white font-extralight"
+            to={item.target}
+            smooth={true}
+            duration={500}
+          >
+            <li>
               {item.label}
-            </Link>
-            <div className="absolute bottom-0 left-0 w-full h-0 border-b border-white group-hover:h-1 group-hover:opacity-100 opacity-0 transition-all duration-200"></div>
-          </li>
+              <div className="absolute bottom-0 left-0 w-full h-0 border-b border-white group-hover:h-1 group-hover:opacity-100 opacity-0 transition-all duration-200"></div>
+            </li>
+          </Link>
         ))}
       </ul>
 
@@ -58,7 +65,7 @@ const Navbar = () => {
         }
       >
         {menuItems.map(item => (
-          <li key={item.id} className="py-6 text-4xl">
+          <li key={item.id} className="py-6 text-4xl cursor-pointer">
             <Link onClick={handleClick} to={item.target} smooth={true} duration={500}>
               {item.label}
             </Link>
