@@ -1,9 +1,11 @@
-import { Hi } from '@/lib/components'
+import Navbar from '@/lib/components/Navbar'
+import Home from '@/lib/components/Home'
 
-export default function Home() {
+export default function Index() {
   return (
-    <main className="flex items-center justify-center w-full h-screen">
-      <Hi name=".me" />
-    </main>
+    <>
+      <Navbar />
+      <Home />
+    </>
   )
 }
