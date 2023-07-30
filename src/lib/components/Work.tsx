@@ -23,12 +23,12 @@ const Work = () => {
     },
     {
       title: 'V9',
-      description: 'The next Google V8 engine written in Rust',
+      description: 'The next Google V8 engine written in Rust (just started)',
       repoUrl: 'https://github.com/aymene01/v9',
     },
     {
       title: 'SteelVolt',
-      description: 'Database Engine written in Rust',
+      description: 'Database Engine written in Rust (just started',
       repoUrl: 'https://github.com/aymene01/SteelVault',
     },
   ]
