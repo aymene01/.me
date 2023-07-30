@@ -28,7 +28,7 @@ const Work = () => {
     },
     {
       title: 'SteelVolt',
-      description: 'Database Engine written in Rust (just started',
+      description: 'Database Engine written in Rust (just started)',
       repoUrl: 'https://github.com/aymene01/SteelVault',
     },
   ]
