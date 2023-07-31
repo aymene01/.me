@@ -16,14 +16,14 @@ export const About = () => {
             <p className="text-left">Hi. I'm Aymene, nice to meet you.</p>
           </div>
           <div>
-            <p>
-              I am passionate about building excellent software that improves the lives of those around me. During my
-              internships at <span className="font-bold text-pink-600">Coinhouse</span>,
+            <p className="font-light">
+              I am passionate about building excellent software. During my internships at{' '}
+              <span className="font-bold text-pink-600">Coinhouse</span>,
               <span className="font-bold text-pink-600">Bodyguard.ai</span>, and{' '}
-              <span className="font-bold text-pink-600">Yomo.ai</span>, I gained extensive experience in full-stack
-              development, DevOps, and cloud technologies. From individuals and small businesses to large corporations,
-              I've crafted software solutions that enrich lives. Having this expertise at your fingertips opens the door
-              to creating impactful and transformative software.
+              <span className="font-bold text-pink-600">Yomo.ai</span>, I have gained extensive experience in full-stack
+              development, DevOps, and cloud technologies, allowing me to create software solutions that empower
+              individuals, small businesses, and large corporations alike. With this expertise, we can open doors to
+              impactful and transformative software. Let's work together to build a brighter future!
             </p>
           </div>
         </div>
