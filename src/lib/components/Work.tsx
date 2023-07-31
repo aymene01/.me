@@ -22,14 +22,14 @@ const Work = () => {
       repoUrl: 'https://github.com/aymene01/klat',
     },
     {
+      title: 'Notion for EFREI',
+      description: 'Fullstack web app for creating blogs like the original Notion app',
+      repoUrl: 'https://github.com/aymene01/notion-for-efrei',
+    },
+    {
       title: 'V9',
       description: 'The next Google V8 engine written in Rust (just started)',
       repoUrl: 'https://github.com/aymene01/v9',
-    },
-    {
-      title: 'SteelVolt',
-      description: 'Database Engine written in Rust (just started)',
-      repoUrl: 'https://github.com/aymene01/SteelVault',
     },
   ]
 
