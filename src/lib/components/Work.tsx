@@ -1,5 +1,23 @@
 'use client'
 
+const projects = [
+  {
+    title: 'Notion for EFREI',
+    description: 'Fullstack web app for creating blogs like the original Notion app',
+    repoUrl: 'https://github.com/aymene01/notion-for-efrei',
+  },
+  {
+    title: 'KLAT',
+    description: 'Fullstack web and mobile app using latest technologies (dev)',
+    repoUrl: 'https://github.com/aymene01/klat',
+  },
+  {
+    title: 'V9',
+    description: 'The next Google V8 engine written in Rust (just started)',
+    repoUrl: 'https://github.com/aymene01/v9',
+  },
+]
+
 const ProjectCard = ({ title, body, repoUrl }: { title: string; body: string; repoUrl: string }) => {
   return (
     <div className="space-y-5 w-1/5 flex flex-col justify-around maz">
@@ -14,25 +32,7 @@ const ProjectCard = ({ title, body, repoUrl }: { title: string; body: string; re
   )
 }
 
-const Work = () => {
-  const projects = [
-    {
-      title: 'Notion for EFREI',
-      description: 'Fullstack web app for creating blogs like the original Notion app',
-      repoUrl: 'https://github.com/aymene01/notion-for-efrei',
-    },
-    {
-      title: 'KLAT',
-      description: 'Fullstack web and mobile app using latest technologies (dev)',
-      repoUrl: 'https://github.com/aymene01/klat',
-    },
-    {
-      title: 'V9',
-      description: 'The next Google V8 engine written in Rust (just started)',
-      repoUrl: 'https://github.com/aymene01/v9',
-    },
-  ]
-
+export const Work = () => {
   return (
     <div id="work" className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
@@ -48,5 +48,3 @@ const Work = () => {
     </div>
   )
 }
-
-export default Work

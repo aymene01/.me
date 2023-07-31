@@ -22,7 +22,7 @@ const socialIcons = [
   { id: 2, href: 'https://github.com/aymene01', label: 'Github', icon: <FaGithub size={30} /> },
 ]
 
-const Navbar = () => {
+export const Navbar = () => {
   const [nav, setNav] = useState(false)
   const handleClick = () => setNav(!nav)
 
@@ -91,5 +91,3 @@ const Navbar = () => {
     </div>
   )
 }
-
-export default Navbar

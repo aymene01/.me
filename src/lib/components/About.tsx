@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-const About = () => {
+export const About = () => {
   return (
     <div id="about" className="w-full h-screen bg-[#0a192f] text-gray-300">
       <div className="flex flex-col justify-center items-center w-full h-full space-y-3">
@@ -31,5 +31,3 @@ const About = () => {
     </div>
   )
 }
-
-export default About

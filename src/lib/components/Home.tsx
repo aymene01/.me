@@ -3,7 +3,7 @@
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { Link } from 'react-scroll'
 
-const Home = () => {
+export const Home = () => {
   return (
     <div id="home" className="w-full h-screen bg-[#0a192f]">
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
@@ -25,5 +25,3 @@ const Home = () => {
     </div>
   )
 }
-
-export default Home
