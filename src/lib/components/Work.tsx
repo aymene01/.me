@@ -17,14 +17,14 @@ const ProjectCard = ({ title, body, repoUrl }: { title: string; body: string; re
 const Work = () => {
   const projects = [
     {
-      title: 'KLAT',
-      description: 'Fullstack web and mobile app using latest technologies',
-      repoUrl: 'https://github.com/aymene01/klat',
-    },
-    {
       title: 'Notion for EFREI',
       description: 'Fullstack web app for creating blogs like the original Notion app',
       repoUrl: 'https://github.com/aymene01/notion-for-efrei',
+    },
+    {
+      title: 'KLAT',
+      description: 'Fullstack web and mobile app using latest technologies (dev)',
+      repoUrl: 'https://github.com/aymene01/klat',
     },
     {
       title: 'V9',
