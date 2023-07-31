@@ -24,7 +24,7 @@ const ProjectCard = ({ title, body, repoUrl }: { title: string; body: string; re
       <h1 className="text-2xl font-extralight">{title}</h1>
       <p>{body}</p>
       <a href={repoUrl} className="block">
-        <button className="text-white group border-2 px-3 py-1 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
+        <button className="text-white group border-2 px-3 py-1 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 font-extralight">
           View code here
         </button>
       </a>
