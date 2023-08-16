@@ -18,15 +18,15 @@ const projects = [
     repoUrl: 'https://github.com/aymene01/hey_fp',
   },
   {
-    title: 'V9',
-    description: 'The next Google V8 engine written in Rust (just started)',
-    repoUrl: 'https://github.com/aymene01/v9',
+    title: 'fp-cli',
+    description: 'CLI App with Authentication using TypeScript and fp-ts',
+    repoUrl: 'https://github.com/aymene01/fp-cli',
   },
 ]
 
 const ProjectCard = ({ title, body, repoUrl }: { title: string; body: string; repoUrl: string }) => {
   return (
-    <div className="space-y-5 w-full md:w-1/3 flex flex-col justify-around sm:w-1/3 mt-3">
+    <div className="space-y-2 w-full md:w-1/3 flex flex-col justify-around sm:w-1/3">
       <h1 className="text-2xl font-extralight">{title}</h1>
       <p>{body}</p>
       <a href={repoUrl} className="block">
@@ -45,7 +45,7 @@ export const Work = () => {
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">Current Projects</p>
         </div>
-        <div className="flex flex-wrap justify-between space-y-4">
+        <div className="flex flex-wrap justify-between space-y-4 mt-3">
           {projects.map(project => (
             <ProjectCard body={project.description} repoUrl={project.repoUrl} title={project.title} />
           ))}
