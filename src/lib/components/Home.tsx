@@ -12,7 +12,7 @@ export const Home = () => {
         <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">Software Engineer</h2>
         <p className="text-[#8892b0] py-4 max-w-[700px] font-extralight">
           I’m a Software Engineer based in Paris, actually working at{' '}
-          <span className="text-pink-600 font-medium">Coinhouse</span> in a Cloud & DevOps Engineering Intern position.
+          <span className="text-pink-600 font-medium">Veepee</span> in a Software & Site Reliability Engineer Intern position.
         </p>
         <Link to="work" smooth={true} duration={1000}>
           <button className="text-white group border-2 px-6 py-3 my-2 flex items-center font-extralight hover:bg-pink-600 hover:border-pink-600">
