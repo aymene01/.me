@@ -2,9 +2,9 @@
 
 const projects = [
   {
-    title: 'Notion for EFREI',
-    description: 'Fullstack web app for creating blogs like the original Notion app',
-    repoUrl: 'https://github.com/aymene01/notion-for-efrei',
+    title: 'keom',
+    description: 'A simple web and mobile app using all new technlogies',
+    repoUrl: 'https://github.com/aymene01/keom',
   },
   {
     title: 'go-blockchain',
