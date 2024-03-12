@@ -16,6 +16,11 @@ const projects = [
     description: 'CRUD API using Rust and PostgreSQL, deployed on flow with Docker',
     repoUrl: 'https://github.com/aymene01/rustfull-api',
   },
+  {
+    title: 'my-server-component',
+    description: 'A minimalistic implementation of the Nextjs server component run client component on the server',
+    repoUrl: 'https://github.com/aymene01/my-server-component',
+  },
 ]
 
 const openSourceContribution = [
