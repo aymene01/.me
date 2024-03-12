@@ -3,7 +3,7 @@
 const projects = [
   {
     title: 'keom',
-    description: 'A simple web and mobile app using all new technlogies',
+    description: 'A web and mobile app using all new technlogies',
     repoUrl: 'https://github.com/aymene01/keom',
   },
   {
